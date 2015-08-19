@@ -6,6 +6,7 @@
 package las.views.user_account_guis;
 
 import SeverConnector.Connector;
+import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.net.MalformedURLException;
@@ -37,7 +38,7 @@ public class LoginForm extends javax.swing.JFrame {
      */
     public LoginForm() {
         initComponents();
-
+        setSize(Toolkit.getDefaultToolkit().getScreenSize());
         try {
             Connector sConnector = Connector.getSConnector();
             UserController = sConnector.getUserController();
@@ -98,7 +99,7 @@ public class LoginForm extends javax.swing.JFrame {
 
         jPanel2.setLayout(null);
 
-        jPanel1.setOpaque(false);
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel2.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 51));
@@ -116,12 +117,12 @@ public class LoginForm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(167, 167, 167)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addContainerGap(334, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                     .addContainerGap(31, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 939, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap()))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 990, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(29, 29, 29)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,9 +138,9 @@ public class LoginForm extends javax.swing.JFrame {
         );
 
         jPanel2.add(jPanel1);
-        jPanel1.setBounds(30, 20, 980, 190);
+        jPanel1.setBounds(30, 20, 1050, 190);
 
-        jPanel3.setBackground(new java.awt.Color(204, 0, 0));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 51));
 
         jLabel4.setFont(new java.awt.Font("Lucida Fax", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 0));
@@ -221,15 +222,15 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel2.add(jPanel3);
         jPanel3.setBounds(390, 320, 490, 270);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/logback.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/logback2.jpg"))); // NOI18N
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(25, 10, 1260, 736);
+        jLabel3.setBounds(5, -4, 1460, 760);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1127, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1461, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

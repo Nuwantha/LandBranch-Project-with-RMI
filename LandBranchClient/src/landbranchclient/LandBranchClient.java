@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import las.views.FrontPage;
+import las.views.StartSplash;
 
 /**
  *
@@ -28,7 +29,7 @@ public class LandBranchClient {
             UIManager.setLookAndFeel(new AcrylLookAndFeel());
             // UIManager.setLookAndFeel(new McWinLookAndFeel());
             // UIManager.setLookAndFeel(new TextureLookAndFeel());       
-            new FrontPage().setVisible(true);
+            new StartSplash().setVisible(true);
         } catch (UnsupportedLookAndFeelException ex) {
             Logger.getLogger(LandBranchClient.class.getName()).log(Level.SEVERE, null, ex);
         }
