@@ -383,7 +383,7 @@ public class FrontPage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        userpanel.setBackground(new java.awt.Color(102, 0, 0));
+        userpanel.setBackground(new java.awt.Color(102, 102, 102));
 
         username.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         username.setForeground(new java.awt.Color(255, 255, 255));
@@ -426,7 +426,7 @@ public class FrontPage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel7.setBackground(new java.awt.Color(204, 204, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -510,7 +510,7 @@ public class FrontPage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        searchPanel.setBackground(new java.awt.Color(102, 0, 0));
+        searchPanel.setBackground(new java.awt.Color(102, 102, 102));
         searchPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         searchPanel.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -621,7 +621,7 @@ public class FrontPage extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        shortcutAccessPanel.setBackground(new java.awt.Color(102, 0, 0));
+        shortcutAccessPanel.setBackground(new java.awt.Color(102, 102, 102));
         shortcutAccessPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         shortcutAccessPanel.setLayout(new java.awt.GridLayout(7, 1, 50, 10));
 
