@@ -393,13 +393,13 @@ public class FrontPage extends javax.swing.JFrame {
         jPanel2.setLayout(new java.awt.GridLayout(1, 2, 10, 0));
 
         LogOutButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        LogOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/logOff.png"))); // NOI18N
+        LogOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/logoff1.png"))); // NOI18N
         LogOutButton.setText("Log off");
         LogOutButton.setToolTipText("Log-off");
         jPanel2.add(LogOutButton);
 
         ExitButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/exit.png"))); // NOI18N
+        ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/exit1.png"))); // NOI18N
         ExitButton.setText("Exit");
         ExitButton.setToolTipText("Exit");
         jPanel2.add(ExitButton);
@@ -626,7 +626,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.setLayout(new java.awt.GridLayout(7, 1, 50, 10));
 
         AddNewApplicantButton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        AddNewApplicantButton.setText("Add new applicant");
+        AddNewApplicantButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/applicant.png"))); // NOI18N
+        AddNewApplicantButton.setText("Applicant Details");
         importantButtonSet.add(AddNewApplicantButton);
         AddNewApplicantButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -636,7 +637,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(AddNewApplicantButton);
 
         addnewpermitbutton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        addnewpermitbutton.setText("Add new Permit");
+        addnewpermitbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/permit.png"))); // NOI18N
+        addnewpermitbutton.setText("Permit Details");
         importantButtonSet.add(addnewpermitbutton);
         addnewpermitbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -646,7 +648,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(addnewpermitbutton);
 
         addnewgrantbutton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        addnewgrantbutton.setText("Add New Grant");
+        addnewgrantbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/grant.png"))); // NOI18N
+        addnewgrantbutton.setText("Grant Details");
         importantButtonSet.add(addnewgrantbutton);
         addnewgrantbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -656,7 +659,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(addnewgrantbutton);
 
         addnewlandbutton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        addnewlandbutton.setText("Add New Land");
+        addnewlandbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/land.png"))); // NOI18N
+        addnewlandbutton.setText("Land Details");
         importantButtonSet.add(addnewlandbutton);
         addnewlandbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -666,7 +670,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(addnewlandbutton);
 
         addcertificationbutton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        addcertificationbutton.setText("Add Certification");
+        addcertificationbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/certify.png"))); // NOI18N
+        addcertificationbutton.setText("Permit Certification");
         importantButtonSet.add(addcertificationbutton);
         addcertificationbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -676,7 +681,8 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(addcertificationbutton);
 
         GramaNiladariDivisionInfoButton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
-        GramaNiladariDivisionInfoButton.setText("Division Info");
+        GramaNiladariDivisionInfoButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/villages.png"))); // NOI18N
+        GramaNiladariDivisionInfoButton.setText("Village Division Info");
         importantButtonSet.add(GramaNiladariDivisionInfoButton);
         GramaNiladariDivisionInfoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -686,6 +692,7 @@ public class FrontPage extends javax.swing.JFrame {
         shortcutAccessPanel.add(GramaNiladariDivisionInfoButton);
 
         changegrantownershipbutton.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
+        changegrantownershipbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/change_owner.png"))); // NOI18N
         changegrantownershipbutton.setText("Change Ownership");
         importantButtonSet.add(changegrantownershipbutton);
         shortcutAccessPanel.add(changegrantownershipbutton);
@@ -702,8 +709,8 @@ public class FrontPage extends javax.swing.JFrame {
                 .addComponent(searchPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(internalFrameAreaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(shortcutAccessPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(shortcutAccessPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         desktopJPanelLayout.setVerticalGroup(
             desktopJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

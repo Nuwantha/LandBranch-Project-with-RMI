@@ -456,8 +456,8 @@
                   <Component id="searchPanel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="internalFrameAreaPanel" max="32767" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="shortcutAccessPanel" min="-2" pref="227" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="shortcutAccessPanel" min="-2" pref="245" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -644,7 +644,7 @@
                           <Font name="SansSerif" size="12" style="1"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/las/icons/logOff.png"/>
+                          <Image iconType="3" name="/las/icons/logoff1.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Log off"/>
                         <Property name="toolTipText" type="java.lang.String" value="Log-off"/>
@@ -656,7 +656,7 @@
                           <Font name="SansSerif" size="12" style="1"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/las/icons/exit.png"/>
+                          <Image iconType="3" name="/las/icons/exit1.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Exit"/>
                         <Property name="toolTipText" type="java.lang.String" value="Exit"/>
@@ -980,7 +980,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add new applicant"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/applicant.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Applicant Details"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -994,7 +997,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add new Permit"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/permit.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Permit Details"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -1008,7 +1014,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add New Grant"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/grant.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Grant Details"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -1022,7 +1031,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add New Land"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/land.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Land Details"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -1036,7 +1048,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add Certification"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/certify.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Permit Certification"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -1050,7 +1065,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Division Info"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/villages.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Village Division Info"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="importantButtonSet"/>
                 </Property>
@@ -1063,6 +1081,9 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft Sans Serif" size="14" style="1"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/las/icons/change_owner.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Change Ownership"/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
