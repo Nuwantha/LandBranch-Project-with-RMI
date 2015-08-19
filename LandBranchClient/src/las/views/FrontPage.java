@@ -727,6 +727,7 @@ public class FrontPage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/applicant - s.png"))); // NOI18N
         jMenu1.setText("Applicant");
 
         jMenuItem1.setText("Add new applicant");
@@ -740,6 +741,7 @@ public class FrontPage extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/permit - s.png"))); // NOI18N
         jMenu2.setText("Permit");
 
         jMenuItem4.setText("Add new permit");
@@ -763,6 +765,7 @@ public class FrontPage extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
+        Grant.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/grant - s.png"))); // NOI18N
         Grant.setText("Grant");
 
         jMenuItem7.setText("Add new Permit");
@@ -786,9 +789,11 @@ public class FrontPage extends javax.swing.JFrame {
 
         jMenuBar1.add(Grant);
 
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/chart.png"))); // NOI18N
         jMenu3.setText("Reports");
         jMenuBar1.add(jMenu3);
 
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/System.png"))); // NOI18N
         jMenu4.setText("System");
 
         jMenuItem10.setText("My account");

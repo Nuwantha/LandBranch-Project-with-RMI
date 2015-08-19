@@ -282,6 +282,9 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/las/icons/applicant - s.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Applicant"/>
           </Properties>
           <SubComponents>
@@ -304,6 +307,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/las/icons/permit - s.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Permit"/>
           </Properties>
           <SubComponents>
@@ -332,6 +338,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="Grant">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/las/icons/grant - s.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Grant"/>
           </Properties>
           <SubComponents>
@@ -360,11 +369,17 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/las/icons/chart.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Reports"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu4">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/las/icons/System.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="System"/>
           </Properties>
           <SubComponents>
