@@ -59,8 +59,8 @@ public class ApplicantForm extends javax.swing.JInternalFrame {
         nicnotvalidlabel.setVisible(false);
         phonenumnotvalidlabel.setVisible(false);
         incomenotvalidlabel.setVisible(false);
-        //registerButton.setEnabled(false);
-        addCurrentResidenceButton.setEnabled(false);
+        registerButton.setEnabled(false);
+        //.setEnabled(false);
         editnamenotvalidlabel.setVisible(false);
         editphonenonotvalidlabel.setVisible(false);
         editbirthdaynotvalidlabel.setVisible(false);
@@ -185,7 +185,6 @@ public class ApplicantForm extends javax.swing.JInternalFrame {
         NoOfUnmarriedChildren = new javax.swing.JLabel();
         marriedChildrenCountSpinner = new javax.swing.JSpinner();
         unmarriedChildrenCountSpinner = new javax.swing.JSpinner();
-        addCurrentResidenceButton = new javax.swing.JButton();
         namenotvalidlabel = new javax.swing.JLabel();
         nicnotvalidlabel = new javax.swing.JLabel();
         phonenumnotvalidlabel = new javax.swing.JLabel();
@@ -680,18 +679,6 @@ public class ApplicantForm extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        addCurrentResidenceButton.setText("Add current residence details");
-        addCurrentResidenceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addCurrentResidenceButtonActionPerformed(evt);
-            }
-        });
-        addCurrentResidenceButton.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                addCurrentResidenceButtonKeyReleased(evt);
-            }
-        });
-
         namenotvalidlabel.setForeground(new java.awt.Color(204, 0, 0));
         namenotvalidlabel.setText("Not Valid");
 
@@ -770,8 +757,7 @@ public class ApplicantForm extends javax.swing.JInternalFrame {
                         .addComponent(annualIncomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(incomenotvalidlabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(addCurrentResidenceButton)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         personalDetailPanelLayout.setVerticalGroup(
@@ -814,12 +800,11 @@ public class ApplicantForm extends javax.swing.JInternalFrame {
                     .addComponent(singleStatusRButton))
                 .addGap(3, 3, 3)
                 .addGroup(personalDetailPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(addCurrentResidenceButton)
                     .addGroup(personalDetailPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(AnnualIncome)
                         .addComponent(annualIncomeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(incomenotvalidlabel))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout NewApplicantDetailPanelLayout = new javax.swing.GroupLayout(NewApplicantDetailPanel);
@@ -1469,16 +1454,9 @@ public void EnableAddButton(){
         // TODO add your handling code here:
     }//GEN-LAST:event_search_nameTextKeyReleased
 
-    private void addCurrentResidenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCurrentResidenceButtonActionPerformed
-
-       // new CurrentResidenceDetailForm(null, true, this, nicText.getText(), nameText.getText(), addressText.getText()).setVisible(true);
-    }//GEN-LAST:event_addCurrentResidenceButtonActionPerformed
-
     private void nicTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nicTextKeyReleased
         EnableAddButton();
-        if (nameText.getText() != "" && nicText.getText() != "") {
-            addCurrentResidenceButton.setEnabled(true);
-        }
+        
         nicnotvalidlabel.setVisible(false);
         String newtext = PatternChecker.checkNIC(nicText.getText());
         nicText.setText(newtext);
@@ -1505,9 +1483,7 @@ public void EnableAddButton(){
     }//GEN-LAST:event_nicTextKeyReleased
 
     private void nameTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nameTextKeyReleased
-        if (nameText.getText() != "" && nicText.getText() != "") {
-            addCurrentResidenceButton.setEnabled(true);
-        }
+        
         namenotvalidlabel.setVisible(false);
         String newtext = PatternChecker.checkstring(nameText.getText());
         nameText.setText(newtext);
@@ -1765,7 +1741,7 @@ public void EnableAddButton(){
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
 
-            addCurrentResidenceButton.requestFocus();
+            registerButton.requestFocus();
         } else if (evt.getKeyCode() == KeyEvent.VK_DOWN) {
             GUIitemsValidator.decrementSpinnerValue(unmarriedChildrenCountSpinner);
         } else if (evt.getKeyCode() == KeyEvent.VK_UP) {
@@ -1962,13 +1938,6 @@ public void EnableAddButton(){
         }
     }//GEN-LAST:event_edit_update_buttunKeyReleased
 
-    private void addCurrentResidenceButtonKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addCurrentResidenceButtonKeyReleased
-        // TODO add your handling code here:
-        if (evt.getKeyCode() == KeyEvent.VK_UP) {
-            annualIncomeText.requestFocus();
-        }
-    }//GEN-LAST:event_addCurrentResidenceButtonKeyReleased
-
     private void telephoneTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telephoneTextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_telephoneTextActionPerformed
@@ -2029,7 +1998,6 @@ public void EnableAddButton(){
     private javax.swing.JLabel PhoneNo;
     private javax.swing.JLabel RegNo;
     private javax.swing.JLabel Status;
-    private javax.swing.JButton addCurrentResidenceButton;
     private javax.swing.JTextArea addressText;
     private javax.swing.JTextField annualIncomeText;
     private org.freixas.jcalendar.JCalendarCombo birthdayChooser1;
