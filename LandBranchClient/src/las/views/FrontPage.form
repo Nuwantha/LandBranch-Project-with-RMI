@@ -664,6 +664,9 @@
                         <Property name="text" type="java.lang.String" value="Log off"/>
                         <Property name="toolTipText" type="java.lang.String" value="Log-off"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogOutButtonActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="ExitButton">
                       <Properties>
@@ -676,6 +679,9 @@
                         <Property name="text" type="java.lang.String" value="Exit"/>
                         <Property name="toolTipText" type="java.lang.String" value="Exit"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitButtonActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>

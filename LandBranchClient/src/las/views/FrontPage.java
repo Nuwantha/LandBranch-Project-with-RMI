@@ -32,6 +32,7 @@ import las.views.searchset.SearchClientForm;
 import las.views.searchset.SearchForm;
 import las.views.searchset.SearchGrantForm;
 import las.views.searchset.SearchPermitForm;
+import las.views.user_account_guis.LoginForm;
 
 /**
  *
@@ -396,12 +397,22 @@ public class FrontPage extends javax.swing.JFrame {
         LogOutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/logoff1.png"))); // NOI18N
         LogOutButton.setText("Log off");
         LogOutButton.setToolTipText("Log-off");
+        LogOutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutButtonActionPerformed(evt);
+            }
+        });
         jPanel2.add(LogOutButton);
 
         ExitButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/las/icons/exit1.png"))); // NOI18N
         ExitButton.setText("Exit");
         ExitButton.setToolTipText("Exit");
+        ExitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitButtonActionPerformed(evt);
+            }
+        });
         jPanel2.add(ExitButton);
 
         javax.swing.GroupLayout userpanelLayout = new javax.swing.GroupLayout(userpanel);
@@ -1019,6 +1030,19 @@ new ChangeGrantOwnershipForm().setVisible(true);
            ex.printStackTrace();
         }
     }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void LogOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutButtonActionPerformed
+        
+        new LoginForm().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_LogOutButtonActionPerformed
+
+    private void ExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonActionPerformed
+        int result=JOptionPane.showConfirmDialog(this, "Are you sure you want to exit?");
+        if(result==JOptionPane.YES_OPTION){
+            this.dispose();
+        }
+    }//GEN-LAST:event_ExitButtonActionPerformed
 
     /**
      * @param args the command line arguments
